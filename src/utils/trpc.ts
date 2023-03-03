@@ -15,6 +15,11 @@ export const trpc = createTRPCSolidStart<AppRouter>({
       links: [
         httpBatchLink({
           url: `${getBaseUrl()}/api/trpc`,
+          headers() {
+            return {
+              Authorization: Math.random().toFixed(12),
+            };
+          },
         }),
       ],
     };
