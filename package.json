@@ -1,0 +1,29 @@
+{
+  "name": "trpc-solid",
+  "scripts": {
+    "build": "solid-start build",
+    "dev": "solid-start dev --port 3000",
+    "start": "solid-start start --port 3000"
+  },
+  "type": "module",
+  "dependencies": {
+    "@solidjs/meta": "^0.28.2",
+    "@solidjs/router": "^0.7.0",
+    "@tanstack/solid-query": "^5.0.0-alpha.0",
+    "@trpc/client": "^10.12.0",
+    "@trpc/server": "^10.12.0",
+    "solid-js": "^1.6.11",
+    "solid-start": "^0.2.21",
+    "solid-trpc": "0.1.0-sssr.7",
+    "undici": "5.20.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.0",
+    "solid-start-node": "^0.2.21",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
