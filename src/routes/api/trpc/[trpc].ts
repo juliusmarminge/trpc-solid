@@ -1,9 +1,9 @@
+import { type APIEvent } from "solid-start";
 import { initTRPC } from "@trpc/server";
 import {
   fetchRequestHandler,
   type FetchCreateContextFnOptions,
 } from "@trpc/server/adapters/fetch";
-import { type APIEvent } from "solid-start";
 
 export const createContext = async (opts: FetchCreateContextFnOptions) => {
   const authToken = opts.req.headers.get("authorization");
